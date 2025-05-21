@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Improved Card Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://www.google.com/imgres?q=avengers%20pictures&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100044454308850&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Favengers%2F&docid=WnPBqZQotWS7lM&tbnid=quWijOui9J8WVM&vet=12ahUKEwignqnlmbSNAxW8Z_UHHS8XFAAQM3oECF0QAA..i&w=960&h=958&hcb=2&ved=2ahUKEwignqnlmbSNAxW8Z_UHHS8XFAAQM3oECF0QAA" alt="Card Image 1" />
+        </div>
+        <div class="card">
+            <img src="https://www.google.com/imgres?q=avengers%20pictures&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100044454308850&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Favengers%2F&docid=WnPBqZQotWS7lM&tbnid=quWijOui9J8WVM&vet=12ahUKEwignqnlmbSNAxW8Z_UHHS8XFAAQM3oECF0QAA..i&w=960&h=958&hcb=2&ved=2ahUKEwignqnlmbSNAxW8Z_UHHS8XFAAQM3oECF0QAA" alt="Card Image 2" />
+        </div>
+        <div class="card">
+            <img src="https://www.google.com/imgres?q=avengers%20pictures&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100044454308850&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Favengers%2F&docid=WnPBqZQotWS7lM&tbnid=quWijOui9J8WVM&vet=12ahUKEwignqnlmbSNAxW8Z_UHHS8XFAAQM3oECF0QAA..i&w=960&h=958&hcb=2&ved=2ahUKEwignqnlmbSNAxW8Z_UHHS8XFAAQM3oECF0QAA" alt="Card Image 3" />
+        </div>
+        <div class="card">
+            <img src="https://www.google.com/imgres?q=avengers%20pictures&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100044454308850&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Favengers%2F&docid=WnPBqZQotWS7lM&tbnid=quWijOui9J8WVM&vet=12ahUKEwignqnlmbSNAxW8Z_UHHS8XFAAQM3oECF0QAA..i&w=960&h=958&hcb=2&ved=2ahUKEwignqnlmbSNAxW8Z_UHHS8XFAAQM3oECF0QAA" alt="Card Image 4" />
+        </div>
+    </div>
+</body>
+</html>
