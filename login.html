@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Mother Theresa College</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* AI-inspired background gradient for login page */
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+        form {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            width: 300px;
+        }
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 8px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #6a11cb;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img.png" alt="College Logo" />
+        <h1>MOTHER THERESA COLLEGE</h1>
+        <div class="contact-info" role="contentinfo">
+            CONTACT US<br />124356566778
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" method="post" aria-label="Login form">
+            <h2>Login</h2>
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" required />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+            <input type="submit" value="Log In" />
+        </form>
+    </main>
+    <div class="announcement" aria-live="polite" aria-atomic="true">
+        ADMISSIONS OPENED
+    </div>
+    <footer>
+        &copy; 2024 Mother Theresa College
+    </footer>
+</body>
+</html>
